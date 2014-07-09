@@ -1,0 +1,74 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: 300 1.8rem/1.6875 sans-serif;
+    font: 300 18px/1.6875 sans-serif;
+    background: $body-background;
+    font-family: 'Proxima Nova Light';
+}
+
+ul, ol, blockquote, p {
+    margin: 0 0 15px 0;
+    margin: 0 0 1.5rem 0;
+}
+
+ul, ol {
+    padding-left: 40px;
+    padding-left: 4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 27px 0;
+    margin: 0 0 2.7rem 0;
+    font-weight: 300;
+    font-family: 'Proxima Nova SBold';
+}
+
+h1 {
+    font-size: 54px;
+    font-size: 5.4rem;
+}
+
+h2 {
+    font-size: 32px;
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 24px;
+    font-size: 2.4rem;
+}
+
+h4, h5, h6 {
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    color: #23b7fb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

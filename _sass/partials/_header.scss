@@ -1,0 +1,27 @@
+header {
+    text-align: center;
+    padding: 50px;
+    padding: 5rem;
+    background: $header-background;
+    color: $header-text;
+}
+
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+header h1 a {
+    color: $header-text;
+}
+
+header h1 a:hover {
+    text-decoration: none;
+}
+
+header .logo {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 125px;
+}
