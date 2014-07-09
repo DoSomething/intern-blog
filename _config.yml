@@ -1,0 +1,11 @@
+title: DoSomething.org Intern Blog
+description: "The official intern blog of DoSomething.org"
+
+markdown: kramdown
+permalink: /blog/:title
+
+highlighter: pygments
+
+sass:
+    sass_dir: _sass
+    style: compressed
