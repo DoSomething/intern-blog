@@ -17,7 +17,7 @@ layout: page
     {% endif %}
 
     {% assign author = site.data.interns[post.author] %}
-    <li><a href="{{ post.url }}">{{ author.first }} {{ author.last }}</a></li>
+    <li><a href="/intern-blog/{{ post.url }}">{{ author.first }} {{ author.last }}</a></li>
 
     {% if forloop.last %}
     </ul>
