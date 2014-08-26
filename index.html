@@ -11,20 +11,20 @@ layout: page
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
     {% if forloop.first %}
-    <img src="/intern-blog/img/interns/class-of-{{this_year}}.jpg" alt="Picture of Intern Class of {{this_year}}" class="intern-picture">
+    <img src="{{ site.github.url }}/img/interns/class-of-{{this_year}}.jpg" alt="Picture of Intern Class of {{this_year}}" class="intern-picture">
     <h2>Intern Class of {{this_year}}'s Experiences</h2>
     <ul>
     {% endif %}
 
     {% assign author = site.data.interns[post.author] %}
-    <li><a href="/intern-blog{{ post.url }}">{{ author.first }} {{ author.last }}</a></li>
+    <li><a href="{{ site.github.url }}{{ post.url }}">{{ author.first }} {{ author.last }}</a></li>
 
     {% if forloop.last %}
     </ul>
     {% else %}
         {% if this_year != next_year %}
         </ul>
-        <img src="/intern-blog/img/interns/class-of-{{next_year}}.jpg" alt="Picture of Intern Class of {{next_year}}" class="intern-picture">
+        <img src="{{ site.github.url }}/img/interns/class-of-{{next_year}}.jpg" alt="Picture of Intern Class of {{next_year}}" class="intern-picture">
         <h2>Intern Class of {{next_year}}'s Experiences</h2>
         <ul>
         {% endif %}
