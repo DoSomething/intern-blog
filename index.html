@@ -2,11 +2,31 @@
 layout: page
 ---
 
-<h2>Blog Posts</h2>
+<p>Welcome to <a href="https://www.dosomething.org/">DoSomething.org's</a> Intern Blog! Here you can find blog posts from our interns about their experiences working at DoSomething!</p>
 
-<ul class="posts">
-    {% for post in site.posts %}
-        {% assign author = site.data.interns[post.author] %}
-        <li><a href="/intern-blog/{{ post.url }}">{{ post.title }}</a> published by {{ author.first }} on {{ post.date | date: "%D" }}</li>
-    {% endfor %}
-</ul>
+<p>Interested about interning at DoSomething? Check out <a href="http://dosomething.org/about/internships">this page</a>!</p>
+
+{% for post in site.posts %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+    {% if forloop.first %}
+    <img src="/img/interns/class-of-{{this_year}}.jpg" alt="Picture of Intern Class of {{this_year}}" class="intern-picture">
+    <h2>Intern Class of {{this_year}}'s Experiences</h2>
+    <ul>
+    {% endif %}
+
+    {% assign author = site.data.interns[post.author] %}
+    <li><a href="{{ post.url }}">{{ author.first }} {{ author.last }}</a></li>
+
+    {% if forloop.last %}
+    </ul>
+    {% else %}
+        {% if this_year != next_year %}
+        </ul>
+        <img src="/img/interns/class-of-{{next_year}}.jpg" alt="Picture of Intern Class of {{next_year}}" class="intern-picture">
+        <h2>Intern Class of {{next_year}}'s Experiences</h2>
+        <ul>
+        {% endif %}
+    {% endif %}
+{% endfor %}
