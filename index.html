@@ -7,6 +7,6 @@ layout: page
 <ul class="posts">
     {% for post in site.posts %}
         {% assign author = site.data.interns[post.author] %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a> published by {{ author.first }} on {{ post.date | date: "%D" }}</li>
+        <li><a href="/intern-blog/{{ post.url }}">{{ post.title }}</a> published by {{ author.first }} on {{ post.date | date: "%D" }}</li>
     {% endfor %}
 </ul>
