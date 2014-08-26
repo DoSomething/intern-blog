@@ -31,9 +31,14 @@ ul, ol {
     padding-left: 4rem;
 }
 
+li {
+    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 27px 0;
-    margin: 0 0 2.7rem 0;
+    margin: 0 0 15px 0;
+    margin: 0 0 1.5rem 0;
     font-weight: 300;
     font-family: 'Proxima Nova SBold';
 }

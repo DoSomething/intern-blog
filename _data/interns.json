@@ -1,8 +1,67 @@
 {
     "srikar": {
-        "first": "Srikar",
+        "position": "Web Development Intern",
         "last": "Gudipati",
-        "age": 17,
-        "position": "Web Development Intern"
+        "first": "Srikar"
+    },
+    "dominick": {
+        "position": "Business Development Intern",
+        "last": " Recckio",
+        "first": "Dominick"
+    },
+    "joseph": {
+        "position": "Web Development Intern",
+        "last": " Kent",
+        "first": "Joseph"
+    },
+    "emily": {
+        "position": "Campaigns Intern",
+        "last": " Schnee",
+        "first": "Emily"
+    },
+    "samvitha": {
+        "position": "TMI Intern",
+        "last": " Ram",
+        "first": "Samvitha"
+    },
+    "rafi": {
+        "position": "Web Development Intern",
+        "last": " Strauss",
+        "first": "Rafi"
+    },
+    "diego": {
+        "position": "QA Intern",
+        "last": " Vicente",
+        "first": "Diego"
+    },
+    "meg": {
+        "position": "Content Intern",
+        "last": " Kirby",
+        "first": "Meg"
+    },
+    "kerstin": {
+        "position": "Business Development Intern",
+        "last": " Groop",
+        "first": "Kerstin"
+    },
+    "laura": {
+        "position": "TMI Intern",
+        "last": " Clevenger",
+        "first": "Laura"
+    },
+    "sawyer": {
+        "position": "Photo and Video Intern",
+        "last": " Smith",
+        "first": "Sawyer"
+    },
+    "steven": {
+        "position": "Technology Intern",
+        "last": " Hartwig",
+        "first": "Steven"
+    },
+    "ramneet": {
+        "position": "Campaigns Intern",
+        "last": " Sachdev",
+        "first": "Ramneet"
     }
 }
