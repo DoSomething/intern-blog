@@ -12,8 +12,8 @@ layout: page
 
     {% if forloop.first %}
     <img src="{{ site.github.url }}/img/interns/class-of-{{this_year}}.jpg" alt="Picture of Intern Class of {{this_year}}" class="intern-picture">
-    <h2>Intern Class of {{this_year}}'s Experiences</h2>
-    <ul>
+    <h2 class="title">Intern Class of {{this_year}}'s Experiences</h2>
+    <ul class="posts">
     {% endif %}
 
     {% assign author = site.data.interns[post.author] %}
@@ -25,8 +25,8 @@ layout: page
         {% if this_year != next_year %}
         </ul>
         <img src="{{ site.github.url }}/img/interns/class-of-{{next_year}}.jpg" alt="Picture of Intern Class of {{next_year}}" class="intern-picture">
-        <h2>Intern Class of {{next_year}}'s Experiences</h2>
-        <ul>
+        <h2 class="title">Intern Class of {{next_year}}'s Experiences</h2>
+        <ul class="posts">
         {% endif %}
     {% endif %}
 {% endfor %}
