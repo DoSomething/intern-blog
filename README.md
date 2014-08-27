@@ -9,3 +9,7 @@ Interns will mainly write about their experiences working at DoSomething.org.
 ## How was this built?
 
 This blog was built using [Jekyll](http://jekyllrb.com/)!
+
+## What does it look like?
+
+![Screenshot](https://raw.github.com/DoSomething/intern-blog/master/img/screenshot.png)
